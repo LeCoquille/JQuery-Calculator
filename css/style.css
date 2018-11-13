@@ -1,0 +1,80 @@
+.container {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height: 100vh;
+  height: auto;
+}
+
+.buttons {
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 96%;
+  align-self:center;
+  margin-bottom: 2%;
+}
+.calculator{
+  width: 308px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1%;
+  display:flex;
+  flex-direction: column;
+}
+button {
+  margin: 2%;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.equals {
+  width:196%;
+}
+
+.title {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
+}
+
+.answer {
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 2%;
+  padding-right: 2%;
+  font-family: 'Kelly Slab', cursive;
+}
+
+#display{
+  font-size: 30px;
+  margin: 0px;
+}
+
+.clear, .allclear, .clear:focus, .clear:hover, .allclear:focus, .allclear:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.equals, .equals:focus, .equals:hover {
+  background-color: lightgreen;
+  color: white;
+}
+
+.operator {
+  background-color: lightblue;
+}
+
+.decimal {
+  background-color: lightyellow;
+}
+.btn {
+  font-size: 20px;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+@media (max-width: 325px){
+  .title {
+    font-size: 20px;
+  }
+}
